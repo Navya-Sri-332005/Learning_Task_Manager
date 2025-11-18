@@ -6,11 +6,12 @@ It features RBAC, JWT auth, and complex API query logic to ensure accurate role-
 /server     → Node + Express backend
 
 //Frontend and Backend setup
-1. Download MongoDB and MongoDB compass on the desktop
-2. Download the frontend and backend to a folder named `edtech_task_manager`
-3. Open powershell (run as administrator) navigate to frontend, similarly another powershell for backend file
-4. Run the commands `net start MongoDB` and `npm run dev` in backend powershell
-5. Run the command `npm start` to connect.
+1. Change the main branch to master branch in the github to view the files
+2. Download MongoDB and MongoDB compass on the desktop
+3. Download the frontend and backend to a folder named `edtech_task_manager`
+4. Open powershell (run as administrator) navigate to frontend, similarly another powershell for backend file
+5. Run the commands `net start MongoDB` and `npm run dev` in backend powershell
+6. Run the command `npm start` to connect.
 
 //Role Functionality
 The application supports two roles:
