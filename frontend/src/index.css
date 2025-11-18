@@ -1,0 +1,84 @@
+/* index.css */
+
+/* --- FULL PAGE COVERAGE FIX --- */
+html, body {
+    height: 100%; 
+    width: 100%; /* Ensure they take full horizontal space */
+    margin: 0;
+    padding: 0;
+}
+#root {
+    height: 100%;
+}
+
+
+/* --- Font Definitions (Montserrat/Lora) --- */
+body {
+  font-family: 'Lora', serif; 
+  background-color: #F0F4F8; 
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+  min-height: 100vh;
+}
+
+h2, h3, h4, header span, .task-title {
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 600; 
+  color: #1A2E35; 
+}
+
+/* --- Base Styling and Layout --- */
+
+/* Ensures the root container is a flex column and centers it */
+#root > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    min-height: 100vh;
+    width: 100%; 
+    box-sizing: border-box;
+    /* REMOVED PADDING: We move the 24px padding inside the main elements */
+    padding: 0; 
+}
+
+button { margin-right: 8px; }
+input, textarea, select { width: 100%; padding: 6px; box-sizing: border-box; margin-bottom: 8px; }
+
+
+/* --- Elegant Color Palette and Elements (buttons, inputs, etc. remain the same) --- */
+button:not(.switch-btn) { 
+  background-color: #38C7D5; 
+  color: #1A2E35; 
+  border: none;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px; 
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+button:hover:not(.switch-btn) { background-color: #23A9B7; transform: translateY(-1px); }
+.switch-btn { color: #4A6C80 !important; }
+input, textarea, select { border: 1px solid #C5D4E1; border-radius: 4px; background-color: white; }
+
+/* Styling for forms on top of background (Login/Signup) */
+.form-container {
+    /* Increased vertical padding slightly to make the box taller */
+    padding: 40px 30px; 
+    background: rgba(255, 255, 255, 0.98); 
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); 
+    margin-top: 0; /* Let flex centering handle vertical position */
+}
+
+/* --- Single Dynamic Background (FULL SCREEN COVERAGE) --- */
+.bg-app {
+  background-image: url('./pics/bg.jpg'); 
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100vw; /* Take full viewport width */
+  min-height: 100vh; /* Take full viewport height */
+  padding: 0; /* Ensure no internal padding causes white edges */
+}
